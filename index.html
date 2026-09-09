@@ -11,7 +11,7 @@
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="brand"><span class="dot"></span> Muslims in CSE</a>
+    <a href="index.html" class="brand"><img src="logo.png" class="logo" alt="Muslims in CSE logo"> Muslims in CSE</a>
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">&#9776;</button>
     <nav class="main-nav">
       <ul>
@@ -35,10 +35,17 @@
 </section>
 
 <section>
-  <div class="container prose" style="text-align:center;">
-    <h2 class="section-title">Our Mission</h2>
-    <p>Muslims in CSE (MiCSE) is a registered student organization in the Paul G. Allen School of Computer Science &amp; Engineering. MiCSE is dedicated to fostering community, belonging, and support around the experiences of Muslim students in computing. Membership, events, and all MiCSE programming are open to all UW students, regardless of religion, background, or identity.</p>
-    <p>The organization's mission centers on creating an inclusive space where students can build community, navigate the challenges of being part of a religious minority in computing, and thrive both academically and personally. Through community-building, mentorship, and shared programming, MiCSE works to ensure that all students in the Allen School feel seen, valued, and supported.</p>
+  <div class="container">
+    <div class="two-col">
+      <div style="text-align:center;">
+        <img src="logo.png" alt="Muslims in CSE logo" style="max-width:320px; width:100%; margin:0 auto; border-radius:50%;">
+      </div>
+      <div class="prose" style="margin:0; max-width:none;">
+        <h2 style="font-size:clamp(1.6rem, 3.2vw, 2.2rem); margin:0 0 16px;">Our Mission</h2>
+        <p>The organization's mission centers on creating an inclusive space where students can build community, navigate the challenges of being part of a religious minority in computing, and thrive both academically and personally. Through community-building, mentorship, and shared programming, MiCSE works to ensure that all students in the Allen School feel seen, valued, and supported.</p>
+        <p style="color: var(--purple); font-weight: 600;">Membership, events, and all MiCSE programming are open to all UW students, regardless of religion, background, or identity.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -46,40 +53,76 @@
   <div class="container">
     <h2 class="section-title">What We Do</h2>
     <p class="section-lead">A few of the ways we support each other throughout the year.</p>
-    <div class="grid">
-      <div class="card">
-        <div class="icon">&#128101;</div>
-        <h3>Community Building</h3>
-        <p>Regular socials, study nights, and gatherings for Muslim students in CSE to connect and support one another.</p>
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="whatWeDoTrack">
+        <div class="gallery-slide" style="background: linear-gradient(rgba(10,8,20,0.15), rgba(10,8,20,0.45)), url('community-building-2.png'); background-size: cover; background-position: center;">
+          <span class="gallery-tag">Community Building</span>
+          <div class="gallery-overlay">
+            <h3>Community Building</h3>
+            <p>Regular socials, study nights, and gatherings for Muslim students in CSE to connect and support one another.</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background: linear-gradient(rgba(10,8,20,0.15), rgba(10,8,20,0.45)), url('professional-development-2.jpg'); background-size: cover; background-position: center;">
+          <span class="gallery-tag">Professional Development</span>
+          <div class="gallery-overlay">
+            <h3>Professional Development</h3>
+            <p>Resume workshops, interview prep, and networking with Muslim professionals in tech.</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background: linear-gradient(rgba(10,8,20,0.15), rgba(10,8,20,0.45)), url('socials.jpg'); background-size: cover; background-position: center;">
+          <span class="gallery-tag">Socials</span>
+          <div class="gallery-overlay">
+            <h3>Socials</h3>
+            <p>Low-key hangouts throughout the quarter — games, food, and a break from problem sets.</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background: linear-gradient(rgba(10,8,20,0.15), rgba(10,8,20,0.45)), url('faith-identity.jpg'); background-size: cover; background-position: center;">
+          <span class="gallery-tag">Faith &amp; Identity</span>
+          <div class="gallery-overlay">
+            <h3>Faith &amp; Identity</h3>
+            <p>Creating space to navigate faith alongside academic life, including prayer space coordination and Iftar events during Ramadan.</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background: linear-gradient(rgba(10,8,20,0.15), rgba(10,8,20,0.45)), url('peer-support.jpg'); background-size: cover; background-position: center;">
+          <span class="gallery-tag">Peer Support</span>
+          <div class="gallery-overlay">
+            <h3>Peer Support</h3>
+            <p>A tight-knit group of people who get it — from tough exam weeks to navigating being Muslim in tech.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="icon">&#127891;</div>
-        <h3>Mentorship</h3>
-        <p>Connecting underclassmen with upperclassmen and alumni for academic and career guidance.</p>
-      </div>
-      <div class="card">
-        <div class="icon">&#127768;</div>
-        <h3>Faith &amp; Identity</h3>
-        <p>Creating space to navigate faith alongside academic life, including prayer space coordination and Iftar events during Ramadan.</p>
-      </div>
-      <div class="card">
-        <div class="icon">&#128188;</div>
-        <h3>Professional Development</h3>
-        <p>Resume workshops, interview prep, and networking with Muslim professionals in tech.</p>
-      </div>
-      <div class="card">
-        <div class="icon">&#127918;</div>
-        <h3>Game Nights &amp; Socials</h3>
-        <p>Low-key hangouts throughout the quarter — games, food, and a break from problem sets.</p>
-      </div>
-      <div class="card">
-        <div class="icon">&#129309;</div>
-        <h3>Peer Support</h3>
-        <p>A tight-knit group of people who get it — from tough exam weeks to navigating being Muslim in tech.</p>
+      <button class="gallery-arrow prev" aria-label="Previous" onclick="galleryMove(-1)">&#10094;</button>
+      <button class="gallery-arrow next" aria-label="Next" onclick="galleryMove(1)">&#10095;</button>
+      <div class="gallery-dots" id="galleryDots">
+        <button class="dot active" aria-label="Slide 1" onclick="galleryGoTo(0)"></button>
+        <button class="dot" aria-label="Slide 2" onclick="galleryGoTo(1)"></button>
+        <button class="dot" aria-label="Slide 3" onclick="galleryGoTo(2)"></button>
+        <button class="dot" aria-label="Slide 4" onclick="galleryGoTo(3)"></button>
+        <button class="dot" aria-label="Slide 5" onclick="galleryGoTo(4)"></button>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  var track = document.getElementById('whatWeDoTrack');
+  var dots = document.querySelectorAll('#galleryDots .dot');
+  var index = 0;
+  function update() {
+    track.style.transform = 'translateX(' + (-index * 100) + '%)';
+    dots.forEach(function (d, i) { d.classList.toggle('active', i === index); });
+  }
+  window.galleryMove = function (dir) {
+    index = (index + dir + track.children.length) % track.children.length;
+    update();
+  };
+  window.galleryGoTo = function (i) {
+    index = i;
+    update();
+  };
+})();
+</script>
 
 <section class="cta">
   <div class="container">
@@ -95,7 +138,7 @@
       <h3>Muslims in CSE</h3>
       <p>A Registered Student Organization at the University of Washington, part of the Paul G. Allen School of Computer Science &amp; Engineering community.</p>
       <div class="social-row">
-        <a href="#" aria-label="Instagram">IG</a>
+        <a href="https://www.instagram.com/muslimsincse/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
         <a href="https://discord.gg/hwtS8GEwmB" target="_blank" rel="noopener" aria-label="Discord">DC</a>
       </div>
     </div>
