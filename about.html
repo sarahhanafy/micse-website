@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Muslims in CSE</title>
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +18,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="events.html">Events</a></li>
+        <li><a href="team.html">Team</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
         <li><a href="faqs.html">FAQs</a></li>
       </ul>
@@ -24,7 +26,7 @@
   </div>
 </header>
 
-<section class="page-hero">
+<section class="page-hero has-photo" style="background-image: linear-gradient(rgba(10,8,20,0.82), rgba(10,8,20,0.86)), url('professional-development-2.jpg');">
   <div class="container">
     <h1>About Us</h1>
     <p>Who we are and what we stand for.</p>
@@ -32,43 +34,123 @@
 </section>
 
 <section>
-  <div class="container prose">
-    <h2>Our Story</h2>
-    <p>Muslims in CSE was founded to give Muslim students in the Paul G. Allen School of Computer Science &amp; Engineering a space to build community, support one another, and navigate faith alongside a demanding academic path.</p>
-    <span class="placeholder-note">[Placeholder — add your founding story / when the org started here]</span>
+  <div class="container">
+    <div class="editorial reveal">
+      <div class="editorial-head">
+        <span class="mission-eyebrow" style="color: var(--purple);">Our Story</span>
+        <h2 class="statement">Community, belonging, and support for Muslim students in <span class="accent">computing.</span></h2>
+      </div>
+      <div class="editorial-body">
+        <p class="lead-para">Muslims in CSE was founded to give Muslim students in the Paul G. Allen School of Computer Science &amp; Engineering a space to build community, support one another, and navigate faith alongside a demanding academic path.</p>
+        <p>Muslims in CSE (MiCSE) is a registered student organization in the Allen School, dedicated to fostering community, belonging, and support around the experiences of Muslim students in computing. Membership, events, and all MiCSE programming are open to all Allen students, regardless of religion, background, or identity.</p>
+        <p>Our mission centers on creating an inclusive space where students can build community, navigate the challenges of being part of a religious minority in computing, and thrive both academically and personally. Through community-building, mentorship, and shared programming, MiCSE works to ensure that all students in the Allen School feel seen, valued, and supported.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h2>Our Mission</h2>
-    <p>Muslims in CSE (MiCSE) is a registered student organization in the Paul G. Allen School of Computer Science &amp; Engineering. MiCSE is dedicated to fostering community, belonging, and support around the experiences of Muslim students in computing. Membership, events, and all MiCSE programming are open to all UW students, regardless of religion, background, or identity.</p>
-    <p>The organization's mission centers on creating an inclusive space where students can build community, navigate the challenges of being part of a religious minority in computing, and thrive both academically and personally. Through community-building, mentorship, and shared programming, MiCSE works to ensure that all students in the Allen School feel seen, valued, and supported.</p>
+<section style="padding-bottom: 40px;">
+  <div class="photo-scroller-head">
+    <p class="photo-scroller-hint">Scroll to see more &rarr;</p>
+    <div class="scroller-nav">
+      <button type="button" aria-label="Scroll photos left" data-scroll="prev" data-target="aboutPhotos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button type="button" aria-label="Scroll photos right" data-scroll="next" data-target="aboutPhotos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+  </div>
 
-    <h2>Our Values</h2>
-    <p>Community, mentorship, faith, and professional growth — the same pillars that shape everything we run, from casual socials to career workshops.</p>
+  <div class="photo-scroller" id="aboutPhotos" tabindex="0" role="region" aria-label="Photos from MiCSE events">
+    <div class="shot" style="background-image: url('gallery-iftar-room.jpg');" role="img" aria-label="Students gathered for a MiCSE Ramadan iftar"></div>
+    <div class="shot" style="background-image: url('gallery-redbull-pair.jpg');" role="img" aria-label="Two students at a MiCSE social with RedBull"></div>
+    <div class="shot" style="background-image: url('gallery-study-space.jpg');" role="img" aria-label="A packed study space during a MiCSE study event"></div>
+    <div class="shot" style="background-image: url('gallery-picnic-pair.jpg');" role="img" aria-label="Two students with MiCSE-branded drinks outdoors"></div>
+    <div class="shot" style="background-image: url('community-building-2.png');" role="img" aria-label="Students sharing a meal at a MiCSE iftar"></div>
+    <div class="shot" style="background-image: url('gallery-sylvan-drink.jpg');" role="img" aria-label="A MiCSE-branded drink in front of the Sylvan Grove columns"></div>
+    <div class="shot" style="background-image: url('faith-identity.png');" role="img" aria-label="Students gathered for Jummah prayer"></div>
+    <div class="shot" style="background-image: url('socials.jpg');" role="img" aria-label="Two students at Engineering Discovery Days"></div>
+    <div class="shot" style="background-image: url('gallery-panel-room.jpg');" role="img" aria-label="Students listening at the Careers in Tech panel"></div>
+    <div class="shot" style="background-image: url('gallery-drinks-table.jpg');" role="img" aria-label="A student mixing drinks at an outdoor MiCSE social"></div>
+    <div class="shot" style="background-image: url('peer-support.jpg');" role="img" aria-label="Students studying together at an office visit"></div>
+  </div>
+</section>
+
+<section class="section-soft">
+  <div class="container">
+    <h2 class="section-title">Our Values</h2>
+    <p class="section-lead">Four pillars shape everything we run, from casual socials to career workshops.</p>
+    <div class="value-grid reveal">
+      <div class="value-card">
+        <div class="value-icon">&#128101;</div>
+        <h3>Community</h3>
+        <p>A place where Muslim students in computing can find each other, and where nobody has to be the only one in the room.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#127768;</div>
+        <h3>Faith &amp; Identity</h3>
+        <p>Space to practice and talk openly about faith alongside a demanding degree — from prayer logistics to Ramadan iftars.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#127891;</div>
+        <h3>Mentorship</h3>
+        <p>Upperclassmen, alumni, and peers sharing what they've learned so no one has to figure the Allen School out alone.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128188;</div>
+        <h3>Professional Growth</h3>
+        <p>Career panels, resume help, and connections to Muslim professionals already working in tech.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">A Year at MiCSE</h2>
+    <p class="section-lead">A look at what one year in our community actually looked like.</p>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-date">January</div>
+        <h3>Pizza Social</h3>
+        <p>Kicking off the quarter by meeting fellow Muslim students in CSE over pizza.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">February</div>
+        <h3>Chai Social</h3>
+        <p>An evening of good vibes, great company, and even better chai.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">March</div>
+        <h3>Ramadan Iftar</h3>
+        <p>Breaking fast together as a community, with food by Port of Peri Peri — open to everyone.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">April</div>
+        <h3>Coffee and Connections &middot; RedBull Social</h3>
+        <p>Two socials, including a collaboration with MiT, to reset partway through the year.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">May</div>
+        <h3>Careers in Tech Panel &middot; Eid Ice Cream Social</h3>
+        <p>Muslim professionals from Google, SpaceX and beyond shared their paths — then we celebrated Eid with MSA at UW.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">June</div>
+        <h3>Fuel for Finals</h3>
+        <p>Closing out the year with free RedBull and snacks to get everyone through dead week.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:36px;"><a href="events.html" class="btn">See All Events</a></p>
   </div>
 </section>
 
 <section class="section-soft">
   <div class="container">
     <h2 class="section-title">Leadership Team</h2>
-    <p class="section-lead">Meet the students running Muslims in CSE this year.</p>
-    <div class="grid">
-      <div class="card" style="text-align:center;">
-        <h3>[Name]</h3>
-        <p>President</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <h3>[Name]</h3>
-        <p>Vice President</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <h3>[Name]</h3>
-        <p>Events Lead</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <h3>[Name]</h3>
-        <p>Outreach Lead</p>
-      </div>
-    </div>
-    <p style="text-align:center; margin-top:24px;"><span class="placeholder-note">[Placeholder — swap in real names/photos/roles for your officer team]</span></p>
+    <p class="section-lead">MiCSE is run entirely by student officers who plan every event, social, and workshop.</p>
+    <p style="text-align:center;"><a href="team.html" class="btn">Meet the Team</a></p>
   </div>
 </section>
 
@@ -86,8 +168,12 @@
       <h3>Muslims in CSE</h3>
       <p>A Registered Student Organization at the University of Washington, part of the Paul G. Allen School of Computer Science &amp; Engineering community.</p>
       <div class="social-row">
-        <a href="https://www.instagram.com/muslimsincse/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-        <a href="https://discord.gg/hwtS8GEwmB" target="_blank" rel="noopener" aria-label="Discord">DC</a>
+        <a href="https://www.instagram.com/muslimsincse/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://discord.gg/hwtS8GEwmB" target="_blank" rel="noopener" aria-label="Discord">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.522 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+        </a>
       </div>
     </div>
     <div class="footer-links">
@@ -97,17 +183,9 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
+          <li><a href="team.html">Team</a></li>
           <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="faqs.html">FAQs</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Partners</h4>
-        <ul>
-          <li><a href="https://com2.cs.washington.edu/" target="_blank" rel="noopener">COM2</a></li>
-          <li><a href="https://gen1.cs.washington.edu/" target="_blank" rel="noopener">GEN1</a></li>
-          <li><a href="https://mit.cs.washington.edu/" target="_blank" rel="noopener">MiT</a></li>
-          <li><a href="https://www.cs.washington.edu/" target="_blank" rel="noopener">Allen School</a></li>
         </ul>
       </div>
       <div>
@@ -122,5 +200,6 @@
   <div class="footer-bottom">&copy; 2026 Muslims in CSE at the Allen School, UW. All rights reserved.</div>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
