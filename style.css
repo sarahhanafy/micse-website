@@ -382,8 +382,9 @@ p.section-lead {
 
 @media (max-width: 720px) {
   .gallery-slide { height: 360px; }
-  .gallery-overlay { padding: 24px; }
+  .gallery-overlay { opacity: 1; padding: 24px; }
   .gallery-overlay h3 { font-size: 1.2rem; }
+  .gallery-tag { display: none; }
 }
 
 /* FAQ accordion */
