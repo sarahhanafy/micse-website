@@ -589,20 +589,15 @@ p.section-lead {
   text-align: left;
 }
 
+/* No frame: the logo is already a self-contained circular emblem, so a
+   translucent panel around it just adds visual noise. */
 .mission-logo-frame {
-  aspect-ratio: 1 / 1;
   width: 100%;
-  border-radius: var(--radius);
-  background: rgba(255,255,255,0.09);
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 18px 44px rgba(0,0,0,0.24);
+  max-width: 330px;
+  margin: 0 auto;
 }
 
-.mission-logo-frame img { width: 100%; height: 100%; object-fit: contain; }
+.mission-logo-frame img { width: 100%; height: auto; display: block; }
 
 .mission-eyebrow {
   display: block;
@@ -631,16 +626,18 @@ p.section-lead {
   color: rgba(255,255,255,0.82);
 }
 
+/* A hairline rule instead of a callout box — reads as editorial rather than
+   as a generic highlighted card. */
 .mission-note {
   margin: 0;
-  padding: 16px 22px;
-  border: 1px solid rgba(255,255,255,0.24);
-  border-left: 3px solid var(--gold);
-  border-radius: var(--radius);
-  background: rgba(255,255,255,0.07);
+  padding: 22px 0 0;
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  background: none;
+  border-radius: 0;
   font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--white);
+  color: rgba(255,255,255,0.7);
+  max-width: 56ch;
 }
 
 @media (max-width: 820px) {
